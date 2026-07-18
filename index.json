@@ -1,0 +1,36 @@
+{
+  "schema_version": 1,
+  "updated": "2026-07-18",
+  "repo": "https://github.com/OpenCnid/better-harnesses-smaller-models",
+  "notes": [
+    {
+      "id": "2026-better-harnesses-smaller-models",
+      "path": "density-chain.md",
+      "title": "Better Harnesses, Smaller Models: Building 90% Cheaper Agents via Automated Harness Adaptation",
+      "authors": [
+        "Chenyang Yang",
+        "Xinran Zhao",
+        "Tongshuang Wu",
+        "Christian Kästner"
+      ],
+      "lab": "carnegie-mellon",
+      "year": 2026,
+      "venue": "arXiv preprint (cs.SE), 2026",
+      "canonical": "https://arxiv.org/abs/2607.08938",
+      "pinned_version": "arXiv:2607.08938v1",
+      "pinned_date": "2026-07-09",
+      "source_license": "CC BY 4.0",
+      "date_summarized": "2026-07-18",
+      "verified_against_source": "2026-07-18",
+      "tier_budget_words": 150,
+      "tags": [
+        "llm-agents",
+        "small-language-models",
+        "agent-harness",
+        "cost-efficiency",
+        "meta-agent",
+        "software-engineering"
+      ]
+    }
+  ]
+}
