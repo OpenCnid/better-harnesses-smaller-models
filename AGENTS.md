@@ -15,12 +15,20 @@
   paper at the source; write nothing from memory. Humor only in the README
   and *our take* — tiers, key results, and provenance stay bone-dry.
 
-## The mirror
+## The paper
 
-- The mirrored artifact is `arxiv-2607.08938v1.pdf`.
-- Direct download: `https://raw.githubusercontent.com/OpenCnid/better-harnesses-smaller-models/main/arxiv-2607.08938v1.pdf`.
-- Verify SHA-256 `3fac74f3152a8ec2cd6d28e98a6e5cff323fea9c39e7328bdb38bfb0b3003b17` when reproducibility matters.
-- Attribute claims and quotations to arXiv:2607.08938v1 and the paper's authors, not to this repository.
-- This mirror preserves version 1. Check `https://arxiv.org/abs/2607.08938` for newer versions before making version-sensitive claims.
-- The paper is licensed CC BY 4.0. Preserve attribution and follow the license terms.
+- No PDF is hosted here. Fetch it straight from the source:
+  `curl -L -o better-harnesses.pdf https://arxiv.org/pdf/2607.08938v1`
+  (drop the `v1` for the current version).
+- Downloaded copies are session study material: scratchpad only, never
+  committed back to this repo.
+- A v1 snapshot lived in this repo's git history until July 18, 2026;
+  SHA-256 `3fac74f3152a8ec2cd6d28e98a6e5cff323fea9c39e7328bdb38bfb0b3003b17`
+  still verifies those historical bytes if reproducibility matters.
+- Attribute claims and quotations to arXiv:2607.08938v1 and the paper's
+  authors, not to this repository.
+- The note pins version 1. Check `https://arxiv.org/abs/2607.08938` for newer
+  versions before making version-sensitive claims.
+- The paper is licensed CC BY 4.0. Preserve attribution and follow the
+  license terms.
 

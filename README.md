@@ -9,17 +9,17 @@
 ![paper license](https://img.shields.io/badge/paper-CC_BY_4.0-8b949e)
 ![numbers from memory](https://img.shields.io/badge/numbers_from_memory-0-2ea44f)
 ![tiers](https://img.shields.io/badge/tiers_shipped-all_five-a371f7)
-![mirror](https://img.shields.io/badge/mirror-checksum--verified-2ea44f)
+![papers hosted](https://img.shields.io/badge/papers_hosted-0_(on_purpose)-2ea44f)
 
 </div>
 
-> **A study repo with a mirror inside.** This repo is OpenCnid's study of one
-> paper — Yang, Zhao, Wu & Kästner, *Better Harnesses, Smaller Models:
-> Building 90% Cheaper Agents via Automated Harness Adaptation*
-> ([arXiv:2607.08938](https://arxiv.org/abs/2607.08938)) — plus the
-> checksum-verified PDF snapshot our tooling ingests (details below).
-> [The note](density-chain.md) is an original synthesis — our words, their
-> findings, a locator on every claim.
+> **A notes repo, not a mirror.** This repo is OpenCnid's study of one paper —
+> Yang, Zhao, Wu & Kästner, *Better Harnesses, Smaller Models: Building 90%
+> Cheaper Agents via Automated Harness Adaptation*
+> ([arXiv:2607.08938](https://arxiv.org/abs/2607.08938)). No paper is hosted
+> here; arXiv serves the original beautifully, and the one-command fetch is
+> below. [The note](density-chain.md) is an original synthesis — our words,
+> their findings, a locator on every claim.
 
 > [!IMPORTANT]
 > **The one-way rule.** When our note and the paper disagree, the paper wins
@@ -61,54 +61,17 @@ and released the code
 ([malusamayo/migration-analysis](https://github.com/malusamayo/migration-analysis)).
 Cite them, not us; BibTeX in [CITATION.md](CITATION.md).
 
-## Direct PDF download
+## 📥 Want the PDF? One command, straight from the source
 
-```text
-https://raw.githubusercontent.com/OpenCnid/better-harnesses-smaller-models/main/arxiv-2607.08938v1.pdf
-```
-
-[Download the PDF](https://raw.githubusercontent.com/OpenCnid/better-harnesses-smaller-models/main/arxiv-2607.08938v1.pdf)
+We don't keep a copy here (see: entire ethos, above). arXiv hosts it
+beautifully, for free, forever — no middlemen, no photocopier smell:
 
 ```bash
-curl -L -o arxiv-2607.08938v1.pdf \
-  https://raw.githubusercontent.com/OpenCnid/better-harnesses-smaller-models/main/arxiv-2607.08938v1.pdf
+curl -L -o better-harnesses.pdf https://arxiv.org/pdf/2607.08938v1
 ```
 
-```python
-from urllib.request import urlretrieve
-
-url = "https://raw.githubusercontent.com/OpenCnid/better-harnesses-smaller-models/main/arxiv-2607.08938v1.pdf"
-urlretrieve(url, "arxiv-2607.08938v1.pdf")
-```
-
-Prefer it straight from the source (always the current version, no
-middlemen)?
-
-```bash
-curl -L -o better-harnesses.pdf https://arxiv.org/pdf/2607.08938
-```
-
-## Artifact details
-
-| Field | Value |
-|---|---|
-| File | `arxiv-2607.08938v1.pdf` |
-| arXiv identifier | `2607.08938v1` |
-| Format | Original text-searchable arXiv PDF |
-| Pages | 12 |
-| Size | 696,336 bytes |
-| SHA-256 | `3fac74f3152a8ec2cd6d28e98a6e5cff323fea9c39e7328bdb38bfb0b3003b17` |
-| Primary source | [arXiv abstract](https://arxiv.org/abs/2607.08938v1) |
-| Versioned PDF | [arXiv PDF](https://arxiv.org/pdf/2607.08938v1) |
-| DOI | [10.48550/arXiv.2607.08938](https://doi.org/10.48550/arXiv.2607.08938) |
-| Submitted | July 9, 2026 |
-| Snapshot downloaded | July 16, 2026 |
-
-Verify the downloaded bytes with:
-
-```bash
-sha256sum arxiv-2607.08938v1.pdf
-```
+Drop the `v1` to always get the current version; keep it to get the exact
+bytes our note studied.
 
 ## Source and attribution
 
@@ -119,16 +82,21 @@ Kästner.
 > Smaller Models: Building 90% Cheaper Agents via Automated Harness
 > Adaptation*. arXiv:2607.08938v1. https://doi.org/10.48550/arXiv.2607.08938
 
-When citing the research, cite the original paper rather than this
-convenience mirror. See [CITATION.md](CITATION.md) for BibTeX.
+When citing the research, cite the original paper rather than this repo. See
+[CITATION.md](CITATION.md) for BibTeX.
 
 ## Provenance
 
-The PDF in this repository is the unchanged file downloaded from the
-versioned arXiv PDF endpoint on July 16, 2026. No pages, metadata, figures,
-or text were modified. Consult the [arXiv record](https://arxiv.org/abs/2607.08938)
-for newer versions. The note in [density-chain.md](density-chain.md) was
-verified against a fresh fetch of the same v1 PDF on July 18, 2026.
+The note in [density-chain.md](density-chain.md) was verified against a fresh
+fetch of the arXiv v1 PDF on July 18, 2026; v1 (submitted July 9, 2026) is
+the latest version as of that date. Consult the
+[arXiv record](https://arxiv.org/abs/2607.08938) for newer versions.
+
+This repo briefly hosted a checksum-verified snapshot of the v1 PDF
+(SHA-256 `3fac74f3152a8ec2cd6d28e98a6e5cff323fea9c39e7328bdb38bfb0b3003b17`)
+as an acquisition artifact; it was removed on July 18, 2026 in favor of the
+one-command fetch above, per house rule. The exact bytes remain retrievable
+from this repository's git history, and the hash above still verifies them.
 
 ## Kept honest by machine
 
@@ -141,9 +109,8 @@ the note gets flagged before we get embarrassed.
 
 - **We are not affiliated with the authors** or Carnegie Mellon. We just
   appreciate a paper that publishes its budget line.
-- **The mirror is a working artifact.** Our research tooling ingests these
-  exact bytes and checks the hash; the arXiv record stays canonical, and the
-  paper keeps its authors' CC BY 4.0 license.
+- **No papers are hosted here.** The paper stays at arXiv under its authors'
+  CC BY 4.0 license; we point, we don't photocopy.
 - **The note is lossy by construction.** The locators are the refund policy:
   any claim can be walked back into the paper in one hop.
 - **We will get things wrong.** When we do, the fix lands source-first and
@@ -159,13 +126,12 @@ Labs.
 ## Layout
 
 ```
-density-chain.md          the five-tier note (the artifact)
-index.json                machine-readable pin + verification metadata
-arxiv-2607.08938v1.pdf    the checksum-verified snapshot (see Artifact details)
-CITATION.md               BibTeX — cite the humans, not us
-AGENTS.md                 the agents' front door
-LICENSE.md                CC BY 4.0 for our prose; the paper keeps its own
-assets/                   banner art (the scaffold is load-bearing)
+density-chain.md    the five-tier note (the artifact)
+index.json          machine-readable pin + verification metadata
+CITATION.md         BibTeX — cite the humans, not us
+AGENTS.md           the agents' front door
+LICENSE.md          CC BY 4.0 for our prose; the paper keeps its own
+assets/             banner art (the scaffold is load-bearing)
 ```
 
 The methodology — METHOD.md, the synthesis prompt, the `density-chain` skill
