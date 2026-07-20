@@ -5,7 +5,7 @@ venue: "arXiv preprint (cs.SE), 2026"
 source: "https://arxiv.org/abs/2607.08938 (pinned: arXiv:2607.08938v1, 2026-07-09)"
 license: "CC BY 4.0 (per the arXiv record)"
 date_summarized: 2026-07-18
-verified_against_source: 2026-07-18
+verified_against_source: 2026-07-20
 tier_budget_words: 150
 tags: [llm-agents, small-language-models, agent-harness, cost-efficiency, meta-agent, software-engineering]
 entity_ledger:
@@ -164,6 +164,10 @@ as intended.
 - Verified against source: 2026-07-18, studied from the arXiv v1 PDF fetched
   fresh from the versioned endpoint; section, table, and figure numbering
   follows that PDF
+- Re-verified against source: 2026-07-20 — re-fetched arXiv:2607.08938v1 from
+  the versioned PDF endpoint and re-checked every T1–T5 claim, key-results
+  row, and locator (§II–VII, Fig. 1–6, Table I–II, footnotes 1–3) against it;
+  no discrepancies found, verification date refreshed only
 - Source license: CC BY 4.0, per the arXiv record
 - Authors' code: https://github.com/malusamayo/migration-analysis [§I,
   footnote 1]
